@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Merriweather:wght@300;400;700;900&family=Montserrat:ital,wght@1,900&family=Roboto:wght@300;400;500&family=Tilt+Warp&display=swap');
+
+@keyframes animate {
+  
+      0% {
+          content: "Hungry?";
+      }
+
+      25% {
+          content: "Unexpected guests at home?";
+      }
+
+      50% {
+          content: "Late night at office?";
+      }
+      75%{
+            content: "Movie marathon?";
+      }
+  }
+  
+*{
+      margin: 0;
+      padding: 0;
+}
+
+.head{
+      display: grid;
+      grid-template-columns: 55% 45%;
+      box-sizing: border-box;
+      height: 90vh;
+      width: 100%;
+}
+
+.head_left{
+      padding: 70px 40px 0;
+      height: 70vh;
+      position: relative;
+}
+._1envo{
+     fill: currentColor;  /* For removing current color */
+     fill: rgb(255, 124, 1);      /* For adding new color */
+      
+}
+
+.head_top{
+      display: flex;
+      gap: 15rem;
+}
+
+.head_top_right{
+      padding: 10px 0 0;
+}
+
+.head_top_right a{
+      text-decoration: none;
+      font-family: 'Tilt Warp',serif;
+      font-weight: 200;
+      font-size: 1rem;
+      color: black;
+      padding-right: 20px;
+}
+
+#link-btn{
+      background-image: url('images/swiggy-btn.png');
+      background-size: cover;
+      width: 7rem;
+      height: 2rem;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+}
+      
+
+.head_top_right a:hover{
+      color: rgb(255, 124, 1); 
+}
+
+.signup{
+      width:auto;
+      height: auto;
+      padding: 10px 25px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      font-family: 'Tilt Warp',serif;
+      font-weight: 200;
+      font-size: 1rem;
+}
+
+.head_mid{
+      position: relative;
+      bottom: 5rem;
+}
+
+.head_mid h2{
+      padding-bottom: 10px;
+}
+.head_mid h2::before {
+      content: "Hungry?";
+      animation: animate linear infinite 10s;
+      font-size: 2rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 700;
+      color: rgb(54, 52, 52);
+  }
+
+.head_mid h4{
+      padding-bottom: 30px; 
+      font-size: 1.5rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 400;
+      color: rgb(120, 115, 115);
+}
+
+.input{
+      padding-bottom: 25px;
+}
+
+.input input{
+      margin-left: 20px;
+      outline: 0;
+      border: 0;
+}
+
+.input input[type=search]{
+      width: 30rem;
+      height: 3.5rem;
+      border: 1px solid  rgb(134, 132, 130); 
+      margin-right: 0;
+      border-right: none;
+}
+
+input[type=search]:focus{
+      outline: 1px solid rgb(246, 121, 4);     /* oranges! yey */
+    }
+      
+.input .find{
+      height: 3.5rem;
+      width: auto;
+      padding: 5px;
+      background-color: rgb(255, 124, 1);
+      border: none;
+      outline: 0;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+      position: relative;
+      top: 3px;
+      margin-left: 0;
+}
+
+.input input[type="search"]::placeholder{
+      font-size: 1rem;
+      font-family: 'Tilt Warp', sans-serif;
+      font-weight: 100;
+      padding-left: 15px;
+      color: rgb(134, 132, 130);
+}
+
+.head_mid h3{
+      padding-bottom: 15px; 
+      font-size: 0.9rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 700;
+      color: rgb(120, 115, 115);
+}
+
+.head_mid ul{
+      display: flex;
+      gap: 2rem;
+      padding-bottom: 7px;
+}
+.head_mid li{
+      list-style: none;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 400;
+}
+
+.head_mid li:nth-child(odd){
+      color: gray;
+}
+
+.head_right img{
+      width: 100%;
+      height: 90vh;
+}
+
+
+/* ============================= Header section Ends Here ========================= */
+
+.mid{
+      display: flex;
+      gap:7rem;
+      background-color: rgba(42, 13, 4, 0.946);
+      color: white;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 30px 50px 20px;
+}
+
+.mid img{
+      width: 9rem;
+      height: 12rem;
+      padding-bottom: 20px;
+}
+
+.mid h3{
+      font-size: 1.1rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 700;
+      padding-bottom: 15px;
+}
+
+.mid p{
+      font-size: 1rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 400;
+      padding-bottom: 15px;
+      color: rgb(146, 126, 126);
+}
+
+/*  ======================= Main section 1 Ends Here =================== */
+
+.section2{
+      display: grid;
+      grid-template-columns: 1.5fr 0.75fr 0.75fr;
+      height: 100vh;
+      width: 100%;
+}
+
+.section2 .mobile1{
+      width: 25rem;
+      height: 80vh;
+      margin-inline-end: 0;
+}
+
+.section2 .mobile2{
+      width: 24rem;
+      height: 90vh;
+      position: relative;
+      top: 55px;
+      margin-inline-start: 0;
+}
+
+.section2_header{
+      padding: 150px 60px 20px 40px;
+}
+
+.section2_header h1{
+      font-size: 2.5rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 600;
+      color: rgb(54, 52, 52);
+      padding-bottom: 20px;
+}
+
+.section2_header h4{
+      font-size: 1.1rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 400;
+      color: rgb(113, 109, 109);
+      padding-bottom: 70px;
+      line-height: 25px;
+}
+
+.download img{
+      width: 10rem;
+      height: 3.5rem;
+      margin-inline-end: 1rem;
+}
+
+/* ======================= Main Sections Ends Here ======================== */
+
+footer{
+      background-color: black;
+      padding: 70px 20px 50px;
+      text-decoration: none;
+      color: white;
+}
+
+.footer_section1{
+      display: flex;
+      gap: 6rem;
+      padding: 0 20px 30px 35px;
+      width: 100%;
+      height: 75vh;
+      box-sizing: border-box;
+}
+
+.footer_section1 h4{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      color: gray;
+      padding-bottom: 30px;
+}
+
+.footer_section1 .images{
+      display: grid;
+}
+
+.footer_section1 .image2{
+      position: relative;
+      bottom: 100px;
+}
+
+.footer_section1 li{
+      list-style: none;
+      line-height: 2rem;
+}
+
+.footer_section1 a{
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      color: rgb(210, 208, 208);
+      padding-bottom: 10px;
+      transition: 0.1s;
+}
+
+.footer_section1 a:hover{
+      color: white;
+}
+
+.footer_section1 li:hover{
+      color: white;
+      transform: scale(1.02);
+}
+
+.footer_section1 .image1:hover{
+      transform: scale(1.1);
+}
+
+.footer_section1 .image2:hover{
+      transform: scale(1.1);
+}
+
+
+/* ====================== Footer Section 1 Ends Here ===================== */
+
+.footer_section2{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 20px;
+}
+
+.footer_section2 .icons{
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+}
+
+.footer_section2 .icons i{
+      font-size: 1.5rem;
+}
+
+.footer_section2 img{
+      width: 8rem;
+      height: 3rem;
+      position: relative;
+      right: 70px;
+}
+
+
